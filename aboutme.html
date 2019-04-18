@@ -36,7 +36,7 @@
     </nav>
     <br>
     <br>
-
+    <div class="container">
     <div class="card text-center" style="margin-right: 100px; margin-left: 100px">
         <div class="card-header" id="about">
             <h1>About the Developer</h1>
@@ -58,10 +58,14 @@
             <p>At this time on my web development journey I can read documentation, write and read code in
                 JavaScript. Please feel free to reach out with any questions.</p>
         </div>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
-            style="margin-right: 570px; margin-left: 570px">
-            See Resume Here
-        </button>
+        <div>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        See Resume Here
+    </button>
+        </div>
+        
+        </div>
+      
         <!-- Modal -->
         <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog"
             aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -74,14 +78,14 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <img src="Assets/Images/resume.PNG">
+                        <img class="img-fluid" src="Assets/Images/resume.PNG">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
-        </div>
+    </div>
         <div class="card-footer text-muted">
         </div>
     </div>
