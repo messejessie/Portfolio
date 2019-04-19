@@ -12,7 +12,6 @@
 
 
 </head>
-
 <body style="background-image:url(Assets/Images/full-bloom/full-bloom.png)">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Jessie Duncan</a>
@@ -22,6 +21,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><span class="sr-only">(current)</span></a>
+                </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="aboutme.html">About Me<span class="sr-only">(current)</span></a>
                 </li>
@@ -37,35 +39,37 @@
     <br>
     <br>
     <div class="container">
-    <div class="card text-center" style="margin-right: 100px; margin-left: 100px">
-        <div class="card-header" id="about">
-            <h1>About the Developer</h1>
+        <div class="card text-center" style="margin-right: 100px; margin-left: 100px">
+            <div class="card-header" id="about">
+                <h1>About the Developer</h1>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text">I am a graduate of the University of Central Florida.
+                    My B.S is in Psychology with a minor in Criminal Justice. I am is currently enrolled in the UCF
+                    Coding
+                    Bootcamp to be a Full Stack Web Developer. I will be finished with the program in May. I am looking
+                    to expand my career in web development.
+                </p>
+                <br>
+                <p>I currently is working for CuraScript SD in Lake Mary, Fl as an Associate Contract Administrator.
+                    I have worked in healthcare for the past 6 years in acute, insurance, and pharmaceuticals. I have
+                    experience with QA testing from a
+                    business perspective with system development and have a combined 13 years in customer service
+                    related
+                    positions.</p>
+                <br>
+                <p>At this time on my web development journey I can read documentation, write and read code in
+                    JavaScript. Please feel free to reach out with any questions.</p>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Resume
+                </button>
+            </div>
+
         </div>
-        <div class="card-body">
-            <h5 class="card-title"></h5>
-            <p class="card-text">I am a graduate of the University of Central Florida.
-                My B.S is in Psychology with a minor in Criminal Justice. I am is currently enrolled in the UCF Coding
-                Bootcamp to be a Full Stack Web Developer. I will be finished with the program in May. I am looking
-                to expand my career in web development.
-            </p>
-            <br>
-            <p>I currently is working for CuraScript SD in Lake Mary, Fl as an Associate Contract Administrator.
-                I have worked in healthcare for the past 6 years in acute, insurance, and pharmaceuticals. I have
-                experience with QA testing from a
-                business perspective with system development and have a combined 13 years in customer service related
-                positions.</p>
-            <br>
-            <p>At this time on my web development journey I can read documentation, write and read code in
-                JavaScript. Please feel free to reach out with any questions.</p>
-        </div>
-        <div>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-        Resume
-    </button>
-        </div>
-        
-        </div>
-      
+
         <!-- Modal -->
         <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog"
             aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -85,30 +89,30 @@
                     </div>
                 </div>
             </div>
-    <!-- </div>
+            <!-- </div>
         <div class="card-footer text-muted">
         </div>
     </div> -->
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <script>
-        $('#exampleModal').on('show.bs.modal', function (event) {
-            var button = $(event.relatedTarget) // Button that triggered the modal
-            var recipient = button.data('whatever') // Extract info from data-* attributes
-            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-            var modal = $(this)
-            modal.find('.modal-title').text('Resume')
-            modal.find('.modal-body input').val(recipient)
-        })
-    </script>
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+            <script>
+                $('#exampleModal').on('show.bs.modal', function (event) {
+                    var button = $(event.relatedTarget) // Button that triggered the modal
+                    var recipient = button.data('whatever') // Extract info from data-* attributes
+                    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+                    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+                    var modal = $(this)
+                    modal.find('.modal-title').text('Resume')
+                    modal.find('.modal-body input').val(recipient)
+                })
+            </script>
 
 </body>
 
