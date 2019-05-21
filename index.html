@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>About Me</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  
+
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
 
@@ -18,14 +18,15 @@
 
 </head>
 
+
 <body style="background-image:url(Assets/Images/full-bloom/full-bloom.png)">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">Jessie Duncan</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <a class="navbar-brand" href="index.html">Jessie Duncan</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse show" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" href="index.html"><span class="sr-only">(current)</span></a>
@@ -43,20 +44,43 @@
       </ul>
     </div>
   </nav>
-  <div class="jumbotron vertical-center text-center" style="background-image:url(Assets/Images/full-bloom/full-bloom.png)">
+  <div class="jumbotron vertical-center text-center"
+    style="background-image:url(Assets/Images/full-bloom/full-bloom.png)">
     <h1 class="display-4">Jessie Duncan</h1>
     <p class="lead"><img src="Assets/Images/me.PNG"></p>
     <h5>Full Stack Web Developer - Central Florida Area</h5>
-    <a href="https://www.linkedin.com/in/jessie-duncan/" target="_blank" class="fa fa-linkedin" margin-right="90px"></a>
-    <a href="https://twitter.com/champangecode" target="_blank" class="fa fa-twitter"margin-right="90px"></a>
+    <a href="https://www.linkedin.com/in/jessie-duncan/" target="_blank" class="fa fa-linkedin"
+      style="margin-right: 10px"></a>
+    <a href="https://twitter.com/champangecode" target="_blank" class="fa fa-twitter" style="margin-right: 10px"></a>
     <!-- Place this tag where you want the button to render. -->
     <a class="github-button" href="https://github.com/messejessie" aria-label="Follow @messejessie on GitHub">Follow
       @messejessie</a>
 
   </div>
- <footer class= "footer">
-   <main roll="main" class=container></main>
- </footer>
+  <footer class="footer">
+    <main roll="main" class=container></main>
+  </footer>
+
+  <!-- triggering nav bar in mobile -->
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script>
+    $('#exampleModal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget) // Button that triggered the modal
+      var recipient = button.data('whatever') // Extract info from data-* attributes
+      // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+      // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+      var modal = $(this)
+      modal.find('.modal-title').text('NavBar')
+      modal.find('.modal-body input').val(recipient)
+    })
+  </script>
 </body>
 
 </html>
